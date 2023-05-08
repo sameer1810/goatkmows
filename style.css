@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Poppins',sans-serif;
     box-sizing: border-box;
+    
 }
 
 body{
@@ -21,6 +22,8 @@ body{
 .container{
     padding: 10px 10%;
 }
+
+
 
 nav{
     display: flex;
@@ -60,6 +63,12 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
+.home{
+    display: flex;
+    
+    
+}
+
 .header-text{
     margin-top: 15%;
     font-size: 30px;
@@ -70,11 +79,17 @@ nav ul li a:hover::after{
     
 }
 
+.home img{
+    margin-bottom: 5%;
+    margin-left: 50%;
+    height: 500px;
+    width: 500px;
+}
 .header-text h1{
     
     top: 347px;
     font-weight: 700;
-    font-size: 55px;
+    font-size: 40px;
     line-height: 28px;
    
 }
@@ -157,16 +172,23 @@ bottom: 95%;
     padding-bottom: 50px;
 }
 
+
 .services-list div i{
     font-size: 50px;
     margin-bottom: 30px;
 }
 
 .services-list div h2{
-    font-size: 30px;
+   font-size: 30px;
     font-weight: 1500;
     margin-bottom: 15px;
 }
+
+#layer1 h2{
+    margin-top: 52px;
+}
+
+
 
 .services-list div a{
     text-decoration: none;
@@ -177,8 +199,43 @@ bottom: 95%;
     
 }
 
+
 .services-list div:hover{
     background: linear-gradient(white,rgba(108, 99, 255, 1));
+
 }
 
+/*bonus*/
+
+#bonus-heading  h2{
+    font-size: 50px;
+     font-weight: 1500;
+     margin-bottom: 10px;
+ }
+
+ #bonus-heading p{
+    color: #222A39;
+    opacity: 0.6;
+ }
+
+ .bonus1{
+    margin-top: 26px;
+    
+ }
+
+ .bonus1 h4{
+    
+font-family: 'Poppins';
+font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+ }
+
+ .b{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px;
+ }
 
