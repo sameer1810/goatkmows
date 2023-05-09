@@ -236,6 +236,22 @@ font-style: normal;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 10px;
+    margin: 30px;
+    margin-left: 70px;
+    
+ }
+
+ #bonus1-img{
+    background: white;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    border:  2px solid #808080;
+    box-shadow: 10px 10px 5px #808080;
+ }
+
+ .b p{
+    font-size: 20px;
  }
 
