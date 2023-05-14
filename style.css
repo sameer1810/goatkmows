@@ -184,9 +184,9 @@ bottom: 95%;
     margin-bottom: 15px;
 }
 
-#layer1 h2{
+/*#layer1 h2{
     margin-top: 52px;
-}
+}*/
 
 
 
@@ -253,5 +253,18 @@ font-style: normal;
 
  .b p{
     font-size: 20px;
+ }
+
+ /* cta*/
+ .cta{
+    background: linear-gradient(135deg, #382D8B 0%, #3677FF 100%);
+    padding-top: 20px;
+    text-align: center;
+ }
+
+ .cta h2{
+    font-size: 55px;
+    
+    color: white;
  }
 
