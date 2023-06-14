@@ -34,11 +34,11 @@ nav{
 
 nav h2{
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 400;
 }
 nav h2 span{
     color: #6947EF;
-    
+    font-weight: 700;
 }
 nav ul li{
     display: inline-block;
