@@ -45,6 +45,11 @@ nav ul li{
     list-style: none;
     margin: 38px 20px;
 }
+h2 a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
 nav ul li a{
     color:#FFFFFF;
     text-decoration: none;
@@ -60,7 +65,7 @@ nav ul li a::after{
     background: #6947EF;
     position: absolute;
     left: 0;
-    bottom: -6px;
+    bottom: -3px;
     transition: 0.5s;
 }
 
@@ -70,8 +75,19 @@ nav ul li a:hover::after{
 
 nav ul li a:hover{
     color:#6947EF;
-    transition: 3s;
+    transition: 0.5s;
 }
+
+nav ul li a.active{
+    color: #6947EF;
+    border-bottom: 4px solid #6947EF;
+    width: 100%;
+    height: 3px;
+    border-radius: 1px;
+    transition: 0.5s ease;
+  }
+  
+
 
 .home{
     display: flex;
