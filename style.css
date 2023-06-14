@@ -67,6 +67,11 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
+nav ul li a:hover{
+    color:#6947EF;
+    transition: 0.5s;
+}
+
 .home{
     display: flex;
     
