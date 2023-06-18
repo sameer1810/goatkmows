@@ -255,6 +255,8 @@ u{
     color: #FFFFFF;
     }
 
+/*SERVICES CARD*/
+
     .service{
         padding: 30px 10%;
         margin-top: 400px;
@@ -287,14 +289,14 @@ u{
     }
     
     
-    .services-list div i{
+    /*.services-list div i{
         font-size: 50px;
         margin-bottom: 30px;
-    }
+    }*/
     
     .services-list div h2{
-       font-size: 30px;
-        font-weight: 1500;
+       font-size: 26px;
+        font-weight: 500;
         margin-bottom: 15px;
         color: white;
     }
@@ -308,8 +310,8 @@ u{
     .services-list div a{
         text-decoration: none;
         color: #6947EF;
-        font-size: 12px;
-        margin-top: 20px;
+        font-size: 16px;
+        margin-top: 50px;
         display: inline-block;
         
     }
