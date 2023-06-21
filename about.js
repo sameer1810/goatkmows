@@ -42,25 +42,3 @@ function setActiveTab(link) {
   line.style.transform = `translateX(${activeLinkOffset}px)`;
   line.style.width = `${activeLinkWidth}px`;
 }
-
-
-/* hover effect on card in which text changes */
-
-var cards = document.querySelectorAll('.card');
-
-cards.forEach(function(card) {
-  var originalText = card.dataset.original;
-  var newText = card.dataset.new;
-  var imageElement = card.querySelector('.image');
-  var textElement = card.querySelector('.text');
-
-  card.addEventListener('mouseover', function() {
-    imageElement.style.display = 'none'; // Hide the image
-    textElement.textContent = newText;
-  });
-
-  card.addEventListener('mouseout', function() {
-    imageElement.style.display = 'block'; // Show the image
-    textElement.textContent = originalText;
-  });
-});
