@@ -15,7 +15,7 @@ body{
         width: 100%;
         height: 50vh;
         position: relative;
-        
+       /* background-color: BLUE; THIS IS FOR BACKGROUND COLOR FOR IMAGE CONTRAST*/
        
 }
 
@@ -155,4 +155,70 @@ nav ul li a.active{
 
 u{
     width: 0.5px;
+}
+
+
+/* body of about page*/
+
+#ourstory{
+    position: absolute;
+    width: 401px;
+    height: 29px;
+
+    top: 448px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 41.89px;
+    line-height: 28px;
+    /* or 67% */
+
+    /* leading-trim and text-edge are draft CSS properties.
+
+    Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+    */
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.bodycontent{
+    display: flex;
+}
+
+.bodycontent p{
+   
+    position: absolute;
+    width: 619px;
+    height: 491px;
+    left: 140px;
+    top: 627px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* leading-trim and text-edge are draft CSS properties.
+    
+    Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+    */
+    
+    
+    color: #FFFFFF;
+    
+
+}
+
+.bodycontent img{
+
+    position: absolute;
+width: 450px;
+height: 450px;
+left: 907px;
+top: 627px;
+border-radius: 10px;
+   
 }
