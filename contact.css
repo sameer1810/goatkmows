@@ -348,7 +348,7 @@ hr{
 .footercontent{
     display: flex;
     justify-content: space-between;
-    margin-top: 200px;
+    top:2200px;
     
 }
 
