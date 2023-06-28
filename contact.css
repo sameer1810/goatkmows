@@ -205,12 +205,18 @@ form input,select,textarea{
     border: 1px solid #FFF;
     width: 290px;
     height: 45px;
+    color: white;
 }
 
+
+option/*:not(:checked) */{
+    background-color: black;
+ }
 form textarea{
     font-size: 20px;
     width: 680px;
     height: 381px;
+    color: white;
 }
 
 .label{
