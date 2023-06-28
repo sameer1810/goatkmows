@@ -1,3 +1,4 @@
+
 *{
     margin:0;
     padding: 0;
@@ -11,12 +12,22 @@ body{
     color: white;
 }
 
-#header{
+.header{
         width: 100%;
-        height: 100vh;
-        
-        background-size:  cover;
-        background-position: center;
+        height: 50vh;
+        position: relative;
+       /* background-color: BLUE; THIS IS FOR BACKGROUND COLOR FOR IMAGE CONTRAST*/
+       
+}
+
+.header::before{
+    background-image: url(images/bgservice.jpg);
+    background-size:  cover;
+    position: absolute;
+    background-position: left;
+    content: '';
+    opacity: 0.3;
+    inset: 0;
 }
 
 .container{
@@ -25,11 +36,13 @@ body{
 
 
 /*nav bar*/
+
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: relative;
 }
 
 nav h2{
@@ -40,6 +53,7 @@ nav h2 span{
     color: #6947EF;
     font-weight: 700;
 }
+
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -83,3 +97,101 @@ nav ul li a.active{
     border-radius: 1px;
     transition: 0.5s ease;
   }
+
+  /*heading*/
+
+  .bg-heading h2 { 
+    color: transparent;
+    
+    font-weight: 900;
+    font-size: 109.66px;
+    line-height: 28px;
+
+    font-family: 'Poppins',normal;
+
+    text-align: center;
+    letter-spacing: 0.175em;
+    text-transform: capitalize;
+
+    -webkit-text-stroke-width: 3px; 
+    -webkit-text-stroke-color: #6947EF;
+
+    position: absolute;
+    left: calc(42% - 582px/2);
+    top: 250px;
+    width: 800px;
+    height: 28px;
+
+    
+} 
+
+
+.sub-heading h3{
+
+    position: absolute;
+    padding: 0;
+    width: 600px;
+    height: 28px;
+    left: calc(47% - 272px/2);
+    top: 250px;
+
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 28px;
+
+    letter-spacing: 0.045em;
+    text-transform: capitalize;
+
+    color: white;
+    background: none;
+
+    background: transparent;
+}
+
+.subtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:200px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+/*GRID*/
+
+.gridcontainer{
+    background-color: white;
+    height: 3600px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 200px;
+    column-gap: 50px;
+    margin-top: 100px;
+}
+
+.griditems{
+    background-color: blue;
+
+}
+
+img {
+   
+    object-fit: fill;
+    height: 600px;
+    width: 533px;
+
+    /*
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    margin-left: 40px;*/
+}
+
+.gridcontent{
+    height: 50%;
+    width: 50%;
+}
