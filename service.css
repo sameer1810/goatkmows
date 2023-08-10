@@ -16,12 +16,15 @@ body{
         width: 100%;
         height: 50vh;
         position: relative;
-       /* background-color: BLUE; THIS IS FOR BACKGROUND COLOR FOR IMAGE CONTRAST*/
+       
+       background: radial-gradient(63.96% 63.96% at 50.00% 33.33%, #6947EF 0%, #000 100%); 
        
 }
 
 .header::before{
-    background-image: url(images/bgservice.jpg);
+    opacity: 0.4000000059604645;
+background: url(images/bgservice.jpg), lightgray -0.398px -341px / 100.055% 197.331% no-repeat;
+    /*background-image: url(images/bgservice.jpg);*/
     background-size:  cover;
     position: absolute;
     background-position: left;
