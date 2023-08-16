@@ -784,42 +784,23 @@ h2 a{
     background-repeat: no-repeat;
     margin-right: 0;
     padding-right: 0;
+    padding-top: 100px;
     
+    display: flex; /* Hidden by default */
+    align-items: center;
+    justify-content: center;
 }
 
-/*
-#scroll-top{
-    font-size: 50px;
-    font-weight: 200;
-   
-    padding-top: 50px;
-   
-    position: fixed;
-    top: 78%;
-    bottom: 22%;
-    left: 50%;
-    right: 50%;
-    cursor: pointer;
-   
-    
-}
-
-#scroll-top i{
-    border: 2px solid white;
-    border-radius: 100%;
-    padding: 10px;
-
-
-}*/
 
 #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
+    display: flex; /* Hidden by default */
+    align-items: center;
+    justify-content: center;
+    /*position: fixed; /* Fixed/sticky position */
     bottom: 50px; /* Place the button at the bottom of the page */
     right: 50%; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
+    
     background-color: transparent; /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
