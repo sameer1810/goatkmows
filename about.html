@@ -14,34 +14,30 @@
 <body>
     
     <div class="header">
-        <div class="container">
-            <nav>
-                <h2><a href="index.html" class="goat"><span class="knows">GOAT </span> KNOWS</a></h2>
-                <ul class="hover-text">
-                    <li><a href="index.html" class="active">HOME</a></li>
-                    <li><a href="service.html">SERVICES</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                    <li><a href="about.html">ABOUT US</a></li>
-                </ul>
-            </nav>
-        </div>
+            <div class="bg-gradient">
+                <div class="container">
+                    <nav>
+                        <h2><a href="index.html" class="goat"><span class="knows">GOAT </span> KNOWS</a></h2>
+                        <ul class="hover-text">
+                        <li><a href="index.html" class="active">HOME</a></li>
+                        <li><a href="service.html">SERVICES</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        
     
 
         <div class="container">
 
-            <div class="services">
-
-                <div class="heading">
-                    <div class="bg-heading">
-                        <h2> ABOUT US </h2>
-                    </div>
-                    <div class="sub-heading">
-                        <h3>
-                            About Our <u>Agency</u>
-                        </h3>
-                    </div>
-                </div>
+            <div class="about-heading">
+                
+                <p>About Our  Design Agency</p>
+                <hr class="about-underline">
             </div>
+
         </div>
     </div>
 
@@ -66,25 +62,17 @@ Contact us today, and let's discuss how we can turn your digital dreams into rea
                 </p>
             </div>
             <div class="image">
-                <img src="images/about-img2.jpg">
+                <img src="images/about-img2.jpg" class="hover-effect">
             </div>
         </div>
     </div>
 
     <div class="container">
 
-        <div class="aboutheading2">
-
-            <div class="heading2">
-                <div class="bg-heading2">
-                    <h2> FOUNDER </h2>
-                </div>
-                <div class="sub-heading2">
-                    <h3>
-                        Let's Meet Our <u>Founder</u>
-                    </h3>
-                </div>
-            </div>
+        <div class="founder-heading">
+                
+            <p>Let's Meet Our Founder</p>
+            <hr class="founder-underline">
         </div>
 
     </div>
@@ -103,9 +91,7 @@ Contact us today, and let's discuss how we can turn your digital dreams into rea
                         <p>CDO</p>
                     </div>
                     <div class="cdosocialicon">
-                        <a href="" class="fa-brands fa-linkedin-in"></a>
-                        <a href="" class="fa-brands fa-instagram"></a><a href=""><i class="fa fa-linkedin"></i></a>
-                        <a href=""><i class="fa fa-instagram"></i></a>
+                        
 
                     </div>
                 </div>
@@ -120,8 +106,7 @@ Contact us today, and let's discuss how we can turn your digital dreams into rea
                         <p>CTO</p>
                     </div>
                     <div class="ctosocialicon">
-                        <a href=""><i class="fa fa-linkedin"></i></a>
-                        <a href=""><i class="fa fa-instagram"></i></a>
+                        
                     </div>
                 </div>
             </div>
@@ -140,42 +125,45 @@ Contact us today, and let's discuss how we can turn your digital dreams into rea
         </div>
     </div>
 
+    <!-- footer-->
+    <hr class="footer-line">
+
     <div class="container">
-        <hr>
-    </div>
-    
-   <footer>
-        <div class="container">
-            <div class="footercontent">
-                <div class="logo">
-                    <span class="goat">GOAT <span class="knows"> KNOWS</span></span>
-                </div>
-                <div class="socials">
-                    <a href="" class="fb"><i class="fa-brands fa-facebook"></i></a>
-                        <a href=""><i class="fa fa-twitter"></i></a>
-                        <a href="" class="instagram"><i class="fa-brands fa-square-instagram" style="color: #aa551d;"></i></a>
-                        <a href="" class="linledin"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
+        <footer>
+            <div class="footer-bar">
+                    <h2><a href="index.html"><span>GOAT </span> KNOWS</a></h2>
+                    <ul>
+                        <li><a href="" ><img src="images/instagram 1.svg"></a></li>
+                        <li><a href=""><img src="images/instagram 2.svg"></a></li>
+                        <li><a href=""><img src="images/twitter 1.svg"></a></li>
+                        <li><a href=""><img src="images/linkedin 1.svg"></a></li>
+                    </ul>
+
             </div>
-        </div>
-   </footer>
+            </div>
 
-   <div class="bglogo">
-        <h2> 
-            GOAT KNOWS
-        </h2>
-   </div>
+            
+        </footer>
+    </div>
 
-   <div class="bottom">
-        <div class="bottomlogo">
-            <a href="" class="fa-brands fa-linkedin-in"></a>
-        </div>
-        <div class="bottomtext">
-            Made in India
-        </div>
-   </div>
+    <div class="footer-img">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button> 
+    </div>
 
+    <div class="made-in-india">
+        <p> Made  in  India</p>
+    </div>
 
+    <script>
+        function topFunction() {
+  document.body.scrollTop = 0; // For Safari
 
+  document.documentElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+  
+};
+    </script>
 </body>
 </html>

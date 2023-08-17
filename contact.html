@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/906f8a04d2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
@@ -170,8 +174,16 @@
     </div>
 
     <div class="footer-img">
-        <img src="" alt="">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa-solid fa-arrow-up"></i>
+        </button>
     </div>
+
+    <div class="made-in-india">
+        <p> Made  in  India</p>
+    </div>
+
+    
     <!--footer
 
     <div class="container">
@@ -210,5 +222,17 @@
             Made in India
         </div>
    </div>-->
+
+   <script>
+        function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+
+  document.documentElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+  
+};
+   </script>
 </body>
 </html>
