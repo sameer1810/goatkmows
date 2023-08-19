@@ -163,7 +163,7 @@ bottom: 95%;
     /*display: block;*/
     margin: 10px auto;
     background-color:  #6947EF;
-    padding: 16px 20px;
+    padding: 16px 16px;
     gap: 10px;
     display: block;
     width: 178px;
@@ -185,7 +185,7 @@ bottom: 95%;
 .btn:hover{
     background-color: #1E1E1E;
     color: WHITE;
-    border: 2px solid WHITE;
+    border: 1px solid WHITE;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -272,6 +272,8 @@ bottom: 95%;
         height: 250px;
         position: relative;
         overflow: hidden;
+
+        
     }
     
     .card img{
@@ -305,11 +307,16 @@ bottom: 95%;
         justify-content: center;
 
         transition: 0.25s;
+        
     }
 
     .card:hover .card-hover{
         bottom: 0;
+        
     }
+    
+
+    
     .card-hover p{
 
         width: 365.258px;
@@ -356,6 +363,7 @@ bottom: 95%;
     .services-list div:hover{
         background: #6947EF;
         box-shadow: 0px 4px 100px rgba(105, 71, 239, 0.25);
+        
     
     }
     
@@ -439,7 +447,7 @@ bottom: 95%;
     }
 
     .accordian{
-        max-width: 95%;
+        max-width: 98%;
         
     }
 
