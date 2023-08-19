@@ -450,7 +450,7 @@ form textarea{
     font-weight: 400;
     line-height: 28px;
     
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     padding: 50px 50px ;
 }
 
@@ -460,6 +460,7 @@ form textarea{
 .footer-line{
     width: 1386px;
     margin-left: 4%;
+    
 }
 
 .footer-bar{
@@ -531,6 +532,10 @@ h2 a{
     font-size: 18px; /* Increase font size */
     font-weight: 400;
     border: 2px solid white;
+  }
+
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
   }
 
   .fasolid{

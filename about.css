@@ -16,7 +16,7 @@ body{
         height: 50vh;
         position: relative;
        /* background-color: BLUE; THIS IS FOR BACKGROUND COLOR FOR IMAGE CONTRAST*/
-       background: radial-gradient(63.96% 63.96% at 50.00% 33.33%, #6947EF 0%, #000 100%); 
+      
 }
 
 .bg-gradient{
@@ -269,10 +269,10 @@ nav ul li a.active{
 
 .founder-heading{
     background-image: url(images/FOUNDER.svg);
-    position: relative;
+    position: absolute;
     background-repeat: no-repeat;
-    top: 840px;
-    left: 21%;
+    top: 1240px;
+    left: 28%;
     right: 28%;
     width: 693px;
     height: 78px;
@@ -518,7 +518,7 @@ opacity: 0.5;
     justify-content: center;
     margin: 10px auto;
     background-color:  #6947EF;
-    padding: 16px 20px;
+    padding: 16px 16px;
     gap: 10px;
     display: block;
     width: 178px;
@@ -544,21 +544,15 @@ opacity: 0.5;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-hr{
-    position: absolute;
-width: 1383px;
-height: 0px;
-left: calc(50% - 1383px/2 - 0.5px);
-top: 2441px;
 
-border: 1px solid #FFFFFF;
-}
 
 /*footer*/
 
 .footer-line{
+    position: absolute;
     width: 1386px;
     margin-left: 4%;
+    top: 2441px;
 }
 
 .footer-bar{
@@ -566,8 +560,10 @@ border: 1px solid #FFFFFF;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: relative;
-    margin-top: 480px;
+    position: absolute;
+    margin-top: 500px;
+    width: 80%;
+    top: 1950px;
 }
 
 .footer-bar h2{
@@ -602,7 +598,7 @@ h2 a{
     background-image: url(images/GOAT\ KNOWS\ \(4\).svg);
     width: 100%;
     height: 139px;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 30px;
     background-repeat: no-repeat;
     margin-right: 0;
@@ -612,12 +608,12 @@ h2 a{
     display: flex; /* Hidden by default */
     align-items: center;
     justify-content: center;
+
+    position: absolute;
+    top:2600px;
 }
 
-.fasolid{
-    font-size: 18px;
-  }
-  
+
 #myBtn {
     display: flex; /* Hidden by default */
     align-items: center;
@@ -630,7 +626,7 @@ h2 a{
     background-color: transparent; /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
+    padding: 12px; /* Some padding */
     border-radius: 100%; /* Rounded corners */
     font-size: 18px; /* Increase font size */
     font-weight: 400;
@@ -644,6 +640,10 @@ h2 a{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 2780px;
+    left: 46%;
+    right: 46%;
 }
 /*
 .footercontent{
