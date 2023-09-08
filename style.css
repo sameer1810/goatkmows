@@ -116,12 +116,49 @@ nav ul li a.active{
 }
 
 .header-img{
-    width: 50%;
+   width: 50%;
+   margin-top: 5vw;
 }
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  
+  .swiper-button-next{
+    display: none;
+  }
+
+  .header-img:hover .swiper-button-next{
+    display: block;
+  }
+
+  .swiper-button-prev{
+    display: none;
+  }
+
+  .header-img:hover .swiper-button-prev{
+    display: block;
+  }
 .header-img img{
-   margin-left: 2.81vw;
-   margin-top: 5.625vw;
-    
+  border-radius: 12%;
    height: auto;
    width: 100%;
 }
@@ -561,14 +598,18 @@ nav ul li a.active{
     .accordian .contentbx .label::before{
         content: '+';
         position: absolute;
-        top: 50%;
+        top: 30%;
         right: 20px;
-        transform: translateY(-50%);
+        /*transform: translateY(-50%);*/
         font-size: 16px;
+        transition: 0.3s ease;
     }
+    
 
     .accordian .contentbx.active .label::before{
-        content: '-';
+        /*content: '-';*/
+        margin-top: 3px;
+        transform: rotate(45deg);
     }
 
     .accordian .contentbx .content{
@@ -576,7 +617,7 @@ nav ul li a.active{
         height: 0;
         overflow: hidden;
         transition: 0.5s;
-        overflow-y: auto;
+        overflow-y: hidden;
     }
 
     .accordian .contentbx.active .content{
@@ -936,7 +977,7 @@ form textarea{
 
 .quote p{
 
-    margin-top: 6.25vw;
+    margin-top: 11.75vw;
     color: #FFF;
     text-align: center;
     width: 95%;

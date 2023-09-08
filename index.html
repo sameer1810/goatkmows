@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goatknows.in</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/906f8a04d2.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>   
@@ -41,7 +42,25 @@
                     </div>
                     
                     <div class="header-img">
-                        <img src="images/New hero image.svg" alt="img">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <img src="images/Home Image 1.svg" alt="home 1">
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="images/Home Image 2.svg" alt="home 1">
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="images/Home Image 3.svg" alt="home 1">
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="images/Home Image 4.svg" alt="home 1">
+                              </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                          </div> 
                     </div>
 
                     
@@ -392,7 +411,30 @@
         <p> Made  in  India</p>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script>
+
+var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        effect: "cards",
+      
+        spaceBetween: 20,
+      centeredSlides: true,
+      loop: true,
+      initialSlide: 1, 
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      }
+    });
     const accordian = document.getElementsByClassName('contentbx');
 
     for(i=0;i<accordian.length;i++){
