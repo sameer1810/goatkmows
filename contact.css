@@ -254,11 +254,14 @@ form input,select,textarea{
 
 form input{
     padding-left: 10px;
+    
 }
-/*drop down*/:root {
-    --primary: #111;
-    --secondary: #fd0;
-}	
+
+form textarea{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+/*drop down*/
 
 
 .select-box {
