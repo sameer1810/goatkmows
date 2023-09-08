@@ -252,6 +252,9 @@ form input,select,textarea{
     color: white;
 }
 
+form input{
+    padding-left: 10px;
+}
 /*drop down*/:root {
     --primary: #111;
     --secondary: #fd0;
@@ -297,7 +300,7 @@ input[type="tel"] {
     position: relative;
     display: flex;
     width: 6rem;
-    padding: .5rem 0.8rem 0 .5rem;
+    padding: .1rem 0.8rem 0 .5rem;
     text-align: center;
     cursor: pointer;
     margin-right: 32px;

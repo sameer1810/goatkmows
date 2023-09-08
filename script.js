@@ -276,6 +276,23 @@ const countries = [
 
 let options = null;
 
+// Function to close the dropdown
+function closeDropdown() {
+  select_box.classList.remove('active');
+  selected_option.classList.remove('active');
+  search_box.value = '';
+  select_box.querySelectorAll('.hide').forEach(el => el.classList.remove('hide'));
+}
+
+// Event listener for clicks on the document
+document.addEventListener('click', function (event) {
+  if (!select_box.contains(event.target) && !selected_option.contains(event.target)) {
+      // Clicked outside the dropdown, so close it
+      closeDropdown();
+  }
+});
+
+
 for (country of countries) {
   const option = `
   <li class="option">
@@ -310,7 +327,8 @@ function selectOption() {
 function searchCountry() {
   let search_query = search_box.value.toLowerCase();
   for (option of options) {
-      let is_matched = option.querySelector('.country-name').innerText.toLowerCase().includes(search_query);
+      let countryName = option.querySelector('.country-name').innerText.toLowerCase();
+      let is_matched = countryName.startsWith(search_query);
       option.classList.toggle('hide', !is_matched)
   }
 }
