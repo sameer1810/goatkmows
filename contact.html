@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/906f8a04d2.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 </head>
 <body>
     
@@ -67,8 +68,23 @@
                 <label for="firstname" class="label">Name</label><br><br>
                 <input type="text" id="firstname" name="firstname" placeholder="  Heisenberg"><br><br>
                 
-                <label for="Mobile no" class="label">Mobile Number</label><br><br>
-                <input type="text" id="fname" name="fname"><br><br>
+                <label for="firstname" class="label">Contact</label><br><br>
+                <div class="select-box">
+                    <div class="selected-option">
+                        <div>
+                            <span class="iconify" data-icon="flag:gb-4x3"></span>
+                            <strong>+44</strong>
+                        </div>
+                        <input type="tel" type="number" name="tel" placeholder="Phone Number">
+                    </div>
+                    <div class="options">
+                        <input type="text" class="search-box" placeholder="Search Country Name">
+                        <ol>
+            
+                        </ol>
+                    </div>
+                </div>
+                <br><br>
 
                 <label for="lname" class="label">How did you hear about us?</label><br><br>
                 <select name="reason" id="cars">
