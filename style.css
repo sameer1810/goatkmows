@@ -18,14 +18,7 @@ body{
         position: relative;
 }
 
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1250px)
-{
-    .header{
-        height: 55vw;
-    }
-}
+
 
 .bg-gradient{
     height: 52vw;
@@ -45,6 +38,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 2vw;
 }
 
 nav h2{
@@ -58,7 +52,7 @@ nav h2 a span{
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 38px 20px;
+    margin: 0px 1.25vw;
     font-size: 0.9vw;
 }
 h2 a{
@@ -123,7 +117,7 @@ nav ul li a.active{
 
   .swiper-slide {
     text-align: center;
-    font-size: 18px;
+    font-size: 1.1vw;
     background:none;
     display: flex;
     justify-content: center;
@@ -184,7 +178,7 @@ nav ul li a.active{
 }
 
 .header-text p{
-   margin-top:40px;
+   margin-top:2.5vw;
     font-weight: 500;
     font-size: 1.125vw;
     line-height: 1.5vw;
@@ -193,38 +187,28 @@ nav ul li a.active{
 .hr1{
     border: 1px solid #6947EF;
     width: 10%;
-    margin-top: 12px;
+    margin-top: 0.75vw;
 }
 
+.home-btn{
+    margin-bottom: 100vw;
+    width: 10.625vw;
+    height: 10vw;
+}
 
 .btn{
     display: flex;
     text-align: center;
     justify-content: center;
     
-    padding: 10px 10px;
+    padding: 0.625vw 0.625vw;
     width: 10.625vw;
     position: absolute;
-    border-radius: 6px;
+    border-radius: 0.3725vw;
     text-decoration: none;
     color: white;
     background-color:  #6947EF;
     font-size: 1vw;
-    /*display: block;*/
-    /*margin: 10px auto;
-    background-color:  #6947EF;
-    padding: 16px 32px;
-    
-    
-    width: 178px;
-    height: 43px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: white;
-    transition: background 0.5s;
-    position: absolute;
-    transition: transform 0.5s;
-    top:625px;*/
 }
 
 
@@ -242,6 +226,7 @@ nav ul li a.active{
     padding: 30px 0px;
     width: 100%;
     margin-bottom: 100px;
+   
 }
 
 .service-heading{
@@ -252,13 +237,21 @@ nav ul li a.active{
    height: 5.2vw;
    background-repeat: no-repeat;
    margin-bottom: 3vw;
-    margin-top: 20px;
+    margin-top: 4vw;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+@media  only screen 
+    and (min-device-width : 320PX) 
+    and (max-device-width : 500px){
 
+        .service-heading{
+            margin-top: 10vw;
+        }
+
+}
 .service-heading IMG{
     width: 100%;
 }
@@ -303,24 +296,35 @@ nav ul li a.active{
 /*SERVICES CARD*/
 
     .service{
-        padding: 30px 10%;
+        padding: 1.8vw 10%;
         margin-top: 6.25VW;
     }
     
     .services-list{
         display: grid;
-        grid-template-columns:  auto auto;;
+        grid-template-columns:  auto auto;
         gap:10vw 10vw;
         /*margin-top: 50px;*/
     }
     
+    @media only screen 
+    and (min-device-width : 320PX) 
+    and (max-device-width : 500px){
+        .services-list{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+        }
+    }
     .card{
         background: #000000;
         padding: 1.875vw;
         font-size: 0.8125vw;
         font-weight: 300;
         border: 1px solid #FFFFFF;
-        border-radius: 10px;
+        border-radius: 0.625vw;
         transition: background 0.5s,transform 0.5s;
         text-align: center;
         width: 25vw;
@@ -352,7 +356,7 @@ nav ul li a.active{
         bottom: -100%;
         right: 0;
         background: #6947EF;
-        border-radius: 10px;
+        border-radius: 0.625vw;
         padding-top: 1.25vw;
         padding-left: 0.625vw;
         
@@ -458,7 +462,7 @@ nav ul li a.active{
         font-weight: 700;
         line-height: 1.75vw; /* 66.842% */
         
-        letter-spacing: 1.885px;
+        letter-spacing: 1px;
     
     }
 
@@ -515,7 +519,7 @@ nav ul li a.active{
         font-weight: 700;
         line-height: 1.75vw; /* 66.842% */
         
-        letter-spacing: 1.885px;
+       
     
     }
 
@@ -524,7 +528,7 @@ nav ul li a.active{
         position: absolute;
         width: 8.81vw;
         height: 1px;
-        left:29.375vw;
+        left:26.375vw;
         top:4.065vw;
         color: white;
         stroke-width: 2px;
@@ -576,7 +580,7 @@ nav ul li a.active{
 
     .accordian .contentbx{
         position: relative;
-        margin: 60px 20px;
+        margin: 3.75vw 1.25vw;
         border: 2px solid rgba(255, 255, 255, 1);
         border-radius: 5px;
     }
@@ -589,13 +593,23 @@ nav ul li a.active{
         padding: 10px;
         color: rgba(255, 255, 255, 1);
         cursor: pointer;
+        
     }
+        
+    @media only screen 
+    and (min-device-width : 320PX) 
+    and (max-device-width : 720px){
 
+        .accordian .contentbx .label{
+            font-size: 2vw;
+        }
+    }
+    
     .accordian .contentbx .label::before{
         content: '+';
         position: absolute;
-        top: 30%;
-        right: 20px;
+        top: 20%;
+        right: 1.25vw;
         /*transform: translateY(-50%);*/
         font-size: 16px;
         transition: 0.3s ease;
@@ -608,12 +622,13 @@ nav ul li a.active{
         transform: rotate(45deg);
     }
 
-    .accordian .contentbx .content{
+    .accordian .contentbx .content {
         position: relative;
         height: 0;
         overflow: hidden;
         transition: 0.5s;
-        overflow-y: hidden;
+        overflow-y: auto;
+        font-size: 1.25vw;
     }
 
     .accordian .contentbx.active .content{
@@ -630,10 +645,10 @@ nav ul li a.active{
         text-align: center;
         justify-content: center;
         border: 1px solid white;
-        padding: 10px 10px;
+        padding: 0.625vw 0.625vw;
         width: 10vw;
         margin-left: 45%;
-        border-radius: 6px;
+        border-radius: 0.375VW;
        font-size: 1vw;
         background:none; /* Change to your preferred button color */
         color: #fff;
@@ -741,7 +756,7 @@ nav ul li a.active{
     }
 
     /*FORM BG*/
-.formbg{
+.container .formbg{
     width: 80vw;
     height: 76.25vw;
     position: relative;
@@ -756,7 +771,6 @@ nav ul li a.active{
 
 .formbg::before{
     
-
     content: "";
     position: absolute;
     top: 0;
@@ -771,9 +785,32 @@ nav ul li a.active{
     border-radius: 10px;
 }
 
-form{
+.phoneformimg{
+    display: none;
+}
+@media only screen 
+and (min-device-width : 320PX) 
+and (max-device-width : 720px){
+
+    .formbg::before{
+        background-image: none;
+    }
+
+    .phoneformimg{
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 4vw;
+    }
+    
+    
+}
+
+.formbg form{
     padding-top: 1.875vw;
     margin-left: 3.125vw;
+    margin-bottom: 1000px;
     font-size: 1.25vw;
     position: relative;
     z-index: 1;
@@ -782,9 +819,9 @@ form{
 
 form input,select,textarea{
     font-size: 1.25vw;
-    border-radius: 4px;
+    border-radius: 0.25vw;
     background: transparent;
-    border-radius: 4px;
+    
     border: 1px solid #FFF;
     width: 22.125vw;
     height: 2.81vw;
@@ -792,13 +829,13 @@ form input,select,textarea{
 }
 
 form input{
-    padding-left: 10px;
+    padding-left: 0.625vw;
     
 }
 
 form textarea{
-    padding-left: 10px;
-    padding-top: 10px;
+    padding-left: 0.625vw;
+    padding-top: 0.625vw;
 }
 /*drop down*/
 
@@ -962,9 +999,9 @@ form textarea{
 }
 
 .button{
-    border-radius: 6px;
+    border-radius: 0.375vw;
     background: #6947EF;
-    gap: 10px;
+    
     color: white;
     border: none;
     font-size: 1vw;
@@ -983,11 +1020,11 @@ form textarea{
     left: 30%;
     
     font-size: 1.25vw;
-    margin-top: 80px;
+    
 }
 
 .tagline img{
-    margin-right: 16px;
+    margin-right: 1vw;
     width: 2vw;
 }
 /*prefooter*/
@@ -1006,6 +1043,15 @@ form textarea{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media only screen 
+and (min-device-width : 320PX) 
+and (max-device-width : 720px){
+
+    .prefooter-heading{
+        margin-top: 70vw;
+    }
 }
 
 .prefooter-heading IMG{
