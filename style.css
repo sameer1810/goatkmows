@@ -948,6 +948,48 @@ nav ul li a.active{
         stroke-width: 2px;
         
     }
+
+    .contact-subheading{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1vw;
+        font-weight: 400;
+       
+    }
+
+    @media only screen 
+    and (min-device-width : 320PX) 
+    and (max-device-width : 480px){
+
+        .contact-heading{
+            margin-left: 12%;
+            margin-right: 12%;
+            margin-top: 10vw;
+            width: 72vw;
+        }
+
+        .contact-heading p{
+            left:15.875vw;
+            top:1.6628vw;
+            font-size: 6.0vw;
+        }
+
+        .contact-underline{
+            width: 12.8125vw;
+            height: 0.0625vw;
+            left:42.625vw;
+            top:5.5625vw;
+        }
+
+        .contact-subheading{
+            font-size: 2.5vw;
+            margin-top: 8.8vw;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+        }
+    }
     /*.contact-heading{
         background-image: url(images/CONTACT.svg);
         margin-left: 23%;
@@ -986,14 +1028,7 @@ nav ul li a.active{
         
     }
 */
-    .contact-subheading{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1vw;
-        font-weight: 400;
-       
-    }
+   
 
     /*FORM BG*/
 .container .formbg{
@@ -1028,25 +1063,10 @@ nav ul li a.active{
 .phoneformimg{
     display: none;
 }
-@media only screen 
-and (min-device-width : 320PX) 
-and (max-device-width : 720px){
-
-    .formbg::before{
-        background-image: none;
-    }
-
-    .phoneformimg{
-        display: block;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        margin-bottom: 4vw;
-        opacity: 0.7;
-    }
-    
-    
+.mob-backimg{
+    display: none;
 }
+
 
 .formbg form{
     padding-top: 1.875vw;
@@ -1275,6 +1295,68 @@ form textarea{
     margin-right: 1vw;
     width: 2vw;
 }
+
+@media only screen 
+and (min-device-width : 320PX) 
+and (max-device-width : 720px){
+
+    .container .formbg{
+        width: 100%;
+        margin-bottom: 22vw;
+    }
+    .formbg::before{
+        background-image: none;
+    }
+
+    .mob-backimg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .phoneformimg{
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 4vw;
+        opacity: 0.4;
+        border-radius: 5px;
+    }
+
+    .tagline{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 15%;
+        font-size: 2.5vw;
+    }
+    .tagline img{
+        margin-right: 1vw;
+        width: 4vw;
+    }
+    .label{
+        font-size: 3vw;
+    }
+    form input,select,textarea{
+        font-size: 3vw;
+        width: 44vw;
+        height: 5.4vw;
+        border-radius: 0.5vw;
+    }
+
+    form textarea{
+        font-size: 2.5vw;
+    }
+
+    .button{
+        width: 12vw;
+        height: 4vw;
+        padding: 0.5vw 0.5vw;
+        font-size: 2vw;
+
+    }
+    
+}
 /*prefooter*/
 
 .prefooter-heading{
@@ -1293,14 +1375,7 @@ form textarea{
     justify-content: center;
 }
 
-@media only screen 
-and (min-device-width : 320PX) 
-and (max-device-width : 720px){
 
-    .prefooter-heading{
-        margin-top: 75vw;
-    }
-}
 
 .prefooter-heading IMG{
     width: 100%;
@@ -1438,6 +1513,15 @@ and (max-device-width : 720px){
     letter-spacing: 1.553px;
 
     margin-bottom: 10vw;
+}
+
+@media only screen 
+and (min-device-width : 320PX) 
+and (max-device-width : 720px){
+
+    .prefooter-heading{
+        margin-top: 75vw;
+    }
 }
 /*footer*/
 
