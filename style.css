@@ -628,7 +628,7 @@ nav ul li a.active{
     .process-img .lap-img{
         width: 100%;
     }
-    .process-img .phone-img{
+    .mob-img{
         display: none;
     }
 
@@ -667,10 +667,11 @@ nav ul li a.active{
            display: none;
         }
 
-        .process-img .phone-img{
-            display: block;
-           margin-left: 20%;
-           margin-top: 50px;
+        .mob-img {
+            display: flex;
+           justify-content: center;
+           align-items: center;
+           
         }
 
     }
@@ -727,6 +728,37 @@ nav ul li a.active{
         
     }
 
+    @media only screen 
+    and (min-device-width : 320PX) 
+    and (max-device-width : 480px){
+    
+        .faq-heading{
+            margin-left: 12%;
+            margin-right: 12%;
+            margin-top: 15vw;
+            width: 72vw;
+        }
+        .faq-heading IMG{
+        
+            height: 15vw;
+            width: 51vw;
+        }
+
+        .faq-heading p{
+            left:5.275vw;
+            top:1.6628vw;
+            font-size: 5.0vw;
+            line-height: 0.75vw;
+        }
+
+        .faq-underline{
+            width: 14.8125vw;
+            height: 0.0625vw;
+            left:45.625vw;
+            top:5.5625vw;
+        }
+
+    }
    /* .faq-heading{
         background-image: url(images/FAQ.svg);
         margin-left: 38%;
@@ -765,6 +797,7 @@ nav ul li a.active{
         
     }
 */
+
     .accordian{
         max-width: 98%;
         
