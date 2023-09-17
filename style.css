@@ -625,8 +625,11 @@ nav ul li a.active{
     }
 
     
-    .process-img img{
+    .process-img .lap-img{
         width: 100%;
+    }
+    .process-img .phone-img{
+        display: none;
     }
 
     @media only screen 
@@ -636,7 +639,7 @@ nav ul li a.active{
         .process-heading{
             margin-left: 12%;
             margin-right: 12%;
-            margin-top: 0vw;
+            margin-top: 10vw;
             width: 72vw;
         }
 
@@ -658,6 +661,16 @@ nav ul li a.active{
             margin-top: 8.8vw;
             margin-left: 6vw;
             
+        }
+
+        .process-img .lap-img{
+           display: none;
+        }
+
+        .process-img .phone-img{
+            display: block;
+           margin-left: 20%;
+           margin-top: 50px;
         }
 
     }
