@@ -880,15 +880,25 @@ nav ul li a.active{
         
     }
     
-    #toggle-btn:hover {
-        background-color: #6947EF; /* Change to a darker shade for hover effect */
-    }
+    
 
     @media only screen 
     and (min-device-width : 320PX) 
     and (max-device-width : 480px){
 
+        .accordian .contentbx .label{
+            font-size: 10px;
+        }
+        .accordian .contentbx .content{
+            font-size: 10px;
+        }
 
+        #toggle-btn{
+            width: 12vw;
+            height: 4vw;
+            padding: 0.5vw 0.5vw;
+            font-size: 2vw;
+        }
     }
     
     
